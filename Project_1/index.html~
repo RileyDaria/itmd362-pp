@@ -3,12 +3,20 @@
 <head>
 <meta charset ="utf-b>
 <title>Dogs</title>
-<style></style>
+<style>
+body{
+background-color: #dfc0a0;
+margin: 0; 10%;
+
+}
+
+
+</style>
 </head>
 <body>
 
 
-<hi> id="main_headong">Dogs are the Best Pets</h1> 
+<hi> id="main_headong">Cutie- Pups</h1> 
 
 
 
