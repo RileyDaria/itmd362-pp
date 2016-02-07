@@ -27,11 +27,52 @@
 	background-repeat: no-repeat;
     background-attachment: fixed;	
 	}
+	#menu {
+	font-family: 'Frijole', cursive;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: grey;
+	text-align: center;
+    }
+		
+	li {
+		float: center;
+		display: inline-block;
+	}
+	/*li a.active {
+		background-color: #e6cbb2;
+		color: white;
+	}*/
+
+
+	li a {
+		display: inline-block;
+		color: white;
+		text-align: center;
+		padding: 14px 16px;
+	
+	}
+
+	li a:hover {
+		background-color: #111;
+	}
+
   
   </style>
 </head>
 <body>
   <h1 id= "main_heading">Cutie Pups</h1>
+  
+  <nav>
+<ul id="menu">
+
+  <li ><a  class="active"  href="index.html">Home</a></li>
+  <li><a href="index.html" >Galery</a></li>
+  
+</ul>
+</nav>
   
 </body>
 </html>
