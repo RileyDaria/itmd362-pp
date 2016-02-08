@@ -22,14 +22,28 @@
 	padding:5px 20px 25px 0;
 	
 	}
-	.header #heading_button{
+	#heading_button{
 	display: inline-block;
 	float: right;
-	border: 2px solid grey;
+	border-left: 2px solid grey;
+
+	border-color: white;
+	font-family: 'Frijole', cursive;
+	cursor: url("pictures/paw_icon.png"), auto;
+	
+	}
+	.buttons{
+		border: 2px solid grey;
 	padding: 1em;
-	border-radius: 25px;
+	/*border-radius: 25px;*/
 	font-family: 'Yantramanav', serif;
 	cursor: url("pictures/paw_icon.png"), auto;
+	
+	}
+	#button_subscribe{
+	background-color: grey;
+	color:white;
+	border-radius: 25px;
 	
 	}
 	.header img{
@@ -53,16 +67,15 @@
     overflow: hidden;
     background-color: grey;
 	text-align: center;
+	
+
     }
 		
 	li {
 		float: left;
 		display: inline-block;
 	}
-	/*li a.active {
-		background-color: #e6cbb2;
-		color: white;
-	}*/
+
 
 
 	li a {
@@ -73,7 +86,7 @@
 	
 	}
 
-	li a:hover {
+	li a:hover, #heading_button:hover {
 		background-color: #e6cbb2;
 	}
 	a:hover{
@@ -96,27 +109,16 @@ background-color: grey;
 position: relative;
 float: center;
 }
-#slideshow_button{
-position: absolute;
-top:8px;
-left:16px;
- background-color: Transparent;
-    background-repeat:no-repeat;
-    border: none;
-    cursor:pointer;
-    overflow: hidden;
-    outline:none;
 
-}
 
 input{
 
-display:inline-black;
+display:inline-block;
 margin: 5px;
 
 }
 #wrapper{
-font-family: 'Indie+Flower', serif;
+font-family: 'Yantramanav', serif;
 background-color: #e6cbb2;
 max-width: 500px;
 text-align: center;
@@ -142,12 +144,15 @@ input,input::-webkit-input-placeholder {
   </style>
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
   <script > 
+  /*this code is taken from http://snook.ca/technical/fade/fade.html */
 $(function(){
     $('.fadein img:gt(0)').hide();
     setInterval(function(){
 	$('.fadein  :first-child').fadeOut().next('img').fadeIn()
 	.end().appendTo('.fadein');}, 3000);
 });
+
+
 
 </script> 
 
@@ -157,17 +162,17 @@ $(function(){
 
   <li ><a  class="active"  href="index.html">Home</a></li>
   <li><a href="index.html" >Galery</a></li>
-  
+   <li id= "heading_button" class="buttons">Click here to Subscribe</li>
 </ul>
 </nav>
 <div class="header">
   <img  src="pictures/pet-paw-hi.png" width="150em" height="150em"/>
   <h1 id= "main_heading">Cutie Pups</h1>
-  <h3 id= "heading_button">Click here to Subscribe</h3>
+ 
   </div>
   <nav>
 <div class="container">
-  <h3 id= "slideshow_button">Click here to Subscribe</h3>
+ 
   
   <div class="fadein" >
    
@@ -187,10 +192,46 @@ $(function(){
 </div>
 <div id="subscribe_field">
  <div id="wrapper"> <h2>If you would like to see more pictures enter your email here:</h2><br>
- <input type= "text" id="email" placeholder = " your@email.com"></input>
- <button id = "button_subscribe">Subscribe</button>
- 
+ <input type= "text" id="email" placeholder = " your@email.com"></input><br>
+ <h3 id = "button_subscribe" class="buttons">Subscribe</h3>
+ <div id="output"></div>
 </div>
 </div>
 </body>
+<script>
+/*this javascript code is taken from http://stackoverflow.com/questions/4801655/how-to-go-to-a-specific-element-on-page */
+	var button_top = document.getElementById('heading_button');
+	button_top.addEventListener('click',function(){
+	window.scroll(0,findPos(document.getElementById('wrapper')));;
+	});
+	
+	function findPos(obj) {
+    var curtop = 0;
+    if (obj.offsetParent) {
+        do {
+            curtop += obj.offsetTop;
+        } while (obj = obj.offsetParent);
+    return [curtop];
+    }
+}
+	var button_bottom = document.getElementById('button_subscribe');
+	button_bottom.addEventListener('click', function(){
+	/*this code was taken from http://stackoverflow.com/questions/20301237/javascript-form-validating-e-mail-address-and-checking-another-field-with-star
+	and modified by me*/
+	var email = document.getElementById('email').value;
+	
+	var email_filter= /^([a-zA-Z0-9_.-])+@(([a-zA-Z0-9-])+.)+([a-zA-Z0-9]{2,4})+$/;
+	
+	var result = document.getElementById('output');
+	
+	if(!email_filter.test(email)){
+		alert('You entered invalid email!\nTry again');
+			}
+		else
+		result.innerHTML = 'You have succesfully subscribed to out mailing list!\nThank you!';
+		
+	
+	}
+);
+</script>
 </html>
