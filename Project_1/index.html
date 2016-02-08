@@ -19,7 +19,7 @@
 	color: #505050 ;
 	font-size:50px;
 	padding-bottom: 10px;
-	padding:5px 20px 25px 0;
+	padding:5px 20px 25px 10px ;
 	
 	}
 	#heading_button{
@@ -94,67 +94,50 @@
 	}
 
 
-.fadein img {   
-position:absolute;
-left:0;
-top:0; 
-height:500px; width:100%; }
+	.fadein img {   
+	position:absolute;
+	left:0;
+	top:0; 
+	height:500px; width:100%; }
 
-.container{
-position: relative;
-}
+	.container{
+	position: relative;
+	}
 
-.fadein { height:500px; width:100%; 
-background-color: grey;
-position: relative;
-float: center;
-}
+	.fadein { height:500px; width:100%; 
+	background-color: grey;
+	position: relative;
+	float: center;
+	}
 
 
-input{
 
-display:inline-block;
-margin: 5px;
+	#wrapper{
+	font-family: 'Yantramanav', serif;
+	background-color: #e6cbb2;
+	max-width: 500px;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 5em;
+	margin-top: 5em;
+	margin-bottom: 5em;
+	}
 
-}
-#wrapper{
-font-family: 'Yantramanav', serif;
-background-color: #e6cbb2;
-max-width: 500px;
-text-align: center;
-margin-left: auto;
-margin-right: auto;
-padding: 5em;
-margin-top: 5em;
-margin-bottom: 5em;
-}
-
-input{
+	input{
 	border-radius: 25px;
-width: 20em;
-height: 2em;
-border: 2px solid grey;
-
-}
- 
-input,input::-webkit-input-placeholder {
- font-size: 30 em;
-    line-height: 2;
-}
+	max-width: 500px;
+	height: 2em;
+	border: 2px solid grey;
+	margin: 5px;
+	}
+	 
+	input,input::-webkit-input-placeholder {
+	 font-size: 30 em;
+		line-height: 2;
+	}
   </style>
-  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
-  <script > 
-  /*this code is taken from http://snook.ca/technical/fade/fade.html */
-$(function(){
-    $('.fadein img:gt(0)').hide();
-    setInterval(function(){
-	$('.fadein  :first-child').fadeOut().next('img').fadeIn()
-	.end().appendTo('.fadein');}, 3000);
-});
 
-
-
-</script> 
 
 </head>
 <body>
@@ -198,7 +181,19 @@ $(function(){
 </div>
 </div>
 </body>
-<script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+  <script > 
+  /*this code is taken from http://snook.ca/technical/fade/fade.html */
+$(function(){
+    $('.fadein img:gt(0)').hide();
+    setInterval(function(){
+	$('.fadein  :first-child').fadeOut().next('img').fadeIn()
+	.end().appendTo('.fadein');}, 3000);
+});
+
+
+
+
 /*this javascript code is taken from http://stackoverflow.com/questions/4801655/how-to-go-to-a-specific-element-on-page */
 	var button_top = document.getElementById('heading_button');
 	button_top.addEventListener('click',function(){
