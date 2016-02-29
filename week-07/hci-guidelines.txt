@@ -26,11 +26,17 @@ Fine-grained, atomic commits to your Production Problems repository that include
 2) an explanation of three different points of guidance from your chosen guidelines (point to the
    specific URL where the guidance can be found) that you implemented in your sketch, written below:
 
-* HCI Guidline One (URL):
+* HCI Guidline One (URL):https://developer.apple.com/library/ios/documentation/UserExperience/Conceptual/MobileHIG/Navigation.html#//apple_ref/doc/uid/TP40006556-CH53-SW1
 * How you implemented it in your sketch:
+Navigation: 
+I added a suare icon for the navigation bar with additional menu option, so that the log in form would stay on its on, but the user will still have some other menu options to browse
 
-* HCI Guidline Two (URL):
+* HCI Guidline Two (URL):https://developer.apple.com/library/ios/documentation/UserExperience/Conceptual/MobileHIG/Modal.html#//apple_ref/doc/uid/TP40006556-CH64-SW1
 * How you implemented it in your sketch:
+Modal Context:
+I focused on the Log in mode becasue that is the main purpose of the page, so the user will not be distracted by other information
 
-* HCI Guidline Three (URL):
+* HCI Guidline Three (URL):https://developer.apple.com/library/ios/documentation/UserExperience/Conceptual/MobileHIG/ColorImagesText.html#//apple_ref/doc/uid/TP40006556-CH58-SW1
 * How you implemented it in your sketch:
+Color and Topogrphy:
+The white background would make all the elements to stand out, big size font just make the elements look clear
