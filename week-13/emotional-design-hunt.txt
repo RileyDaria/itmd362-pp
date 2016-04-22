@@ -11,15 +11,32 @@ Then, locate a physical object that you use regularly in your life (does not hav
 A. Photograph of the object (place in the week-13/ directory and commit).
 
 B. Emotional design levels of your object:
-
+I chose my table mirror that I use to put make up with as an object that 
 * Visceral:
+As far as appearance:
+You can definitely tell that this is a mirror, but I think the legs that support the mirror itself with its 
+curves makes it attractive, and sophisticated. You can definitely tell that this mirror is for a female, so it
+has that kind of though to it(I am not sure how to explain)but it's like you can tell that its not for a little girl,
+but for a woman. Plus I think it goes well with the wall frame that I have(you can see the side of the frame on one of the
+pictures) It also has a curvy and elegant design, but I like how it is simple at the same time.
 
 * Behavioral:
+ It has a traditional shape, and the way the frame is
+holding tells helps to understand that it is a table mirror. It is very functional too. I can perfectly sit it on the table,
+and while I put my make up on, I can see the whole face. It has a functionality to fold the legs inside, so if I really need to put
+it on the shelf I can do that as well. I can easily pick it up and hold too, if lets say I need to go to another room and see my face
+in a different light.
 
 * Reflective:
+On the reflective level I can tell that this mirror makes me feel sophisticated too. Its elegant design is appealing
+to me.
 
 C.  Emotional design qualities of the object that might be useful for Project 3/MyIIT redesign:
 
-1.
-2.
-3.
+1.having the design that is familiar to everyone will make it intuitive for the user to be able to use the object
+For example in the forms that we had to create for the payment, the goal was to design elements is a way that it is familiar to the user.
+2. Then having a pleasing eye design in combination with simplicity is a good thing to implement. For example like we had a 
+photo, then transparent layer, and then simply white frames and text (no crazy colors) made it clear and sophisticated at the same time
+3. Then having different states that will help to have the functionality would help(like I can have the mirror sitting on the table, I can also 
+hold it in my hands, and then I can also fold it and put it away) That can be applied in terms of having the design flexible, so then
+user can see the application on a small screen and on the large screen as well.
