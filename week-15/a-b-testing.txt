@@ -13,3 +13,14 @@ Take a screenshot of the interface on both a mobile and desktop device. Then, sk
 * Sketch or illustrate (e.g., in Photoshop) your alternate/"b" test, placed in this directory (`week-15`)
 
 * A text description of the modification, and a description of the HTML, CSS, and JavaScript that you would need to write for the test (you do *not* have to write the actual HTML, CSS, and JavaScript, however)
+
+The interface component I chose to talk about in this production probmlem is the "bag" icon on the 
+website that I use quite some times the website that plays on the idea of Github is Grubhub.com where you can order food from
+different restaurants online. The problem with that icon is that is always gets me confused becasue it looks just like a lock icon
+that is used in the web for security. If we look at the icon that comes with the https protocl, it looks the same!(to me at least)
+So I as I order the items go to that "bag", so in order to see items that were previously chosed the user needs to click on that 
+confusing "bag" icon. I understand that is hard to have an icon of a bag that will not look a lock.
+Since the lock icon is assosiated with security, I get the idea that the food delivery would be in the bag, but I would suggest
+to make it look more like a bag, and less like a lock. I dont have a photoshop on my system now, so I found some other pictures of bag icons
+that will make that icon better. Those start with "solution"
+So the solution would be simple, just replace the image scr to a different picture of a bag.
